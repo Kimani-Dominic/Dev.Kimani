@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dev.Kimani</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* Add color styles for the icons */
+        .python { color: #3776AB; } /* Python Blue */
+        .js { color: #F0DB4F; } /* JavaScript Yellow */
+        .dart { color: #0175C2; } /* Dart Blue */
+        .html5 { color: #E44D26; } /* HTML5 Orange */
+        .css3 { color: #264DE4; } /* CSS3 Blue */
+    </style>
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about & skills</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work & projects</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>Kimani Muiruri.</h1>
+        <h2>Software Developer / Technical Writer / Ethical Hacker</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <a onclick="showcontact()">contact</a>
+        </div>
+        <table>
+            <tr>
+                <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="https://github.com/Kimani-Dominic" target="_blank"><i class="fab fa-github"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="mailto:kimanimuiruri001@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="https://www.linkedin.com/in/dominic-kimani-7b0485276/" target="_blank"><i class="fab fa-linkedin"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social" href="https://twitter.com/Kimanongoh" target="_blank"><i class="fab fa-twitter"></i></a></td>
+                <br>
+                <a href="tel:+254741951412" class="footer__contact">
+                    <i class="fas fa-phone"></i> Call Me
+                  </a>
+
+            </tr>
+            
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>works & Projects.</h1>
+        <section>
+            <h2>RAAD EHR End-User-Guide</h2>
+            <p>
+                This guide provides an overview of RAAD EHR's main functionalities. 
+                For in-depth assistance, please refer to the specific user manuals available for each module.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;Markdown</div>
+            </div>
+            <br>
+            <button class="btn_one"><a href="https://nomadilab-ehr.github.io/raad-docs/">Live</a></button>
+            <button class="btn_two"><a href="https://github.com/Kimani-Dominic/RAAD">Source Code</a></button>
+        </section>
+        <section>
+            <h2>PhilPhotography</h2>
+            <p>
+                A personalized portfolio template for creatives seeking an impactful online presence. 
+                Crafted for artists, photographers, and videographers, it provides a sleek showcase of their work with an intuitive navigation experience. 
+                With a focus on customization, responsiveness, and a user-friendly contact form, VisualSculpture empowers clients to leave a lasting impression in the digital realm.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+            </div>
+            <img src="images/phil.png">
+            <br>
+            <button class="btn_one"><a href="https://philphotography.netlify.app/">Demo</a></button>
+            <button class="btn_two"><a href="https://github.com/Kimani-Dominic/philphotography">Source Code</a></button>
+        </section>
+        <br>
+        <section>
+            <h2>Todo Hub</h2>
+            <p>
+                TodoHub is a dynamic Todo application built on React, designed to streamline your task management experience. 
+                Integrated with an intuitive date picker, it allows users to effortlessly add, track, and delete tasks, fostering productivity. 
+                The sleek design, coupled with a responsive interface, ensures a seamless journey in organizing and completing your to-dos. 
+                Elevate your productivity with TodoHub today!
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+                <div><i class="fas fa-circle"></i>&nbsp;React</div>
+            </div>
+            <img src="images/todo.png">
+            <br>
+            <button class="btn_one"><a href="https://rtodoo.netlify.app/">Demo</a></button>
+            <button class="btn_two"><a href="https://github.com/Kimani-Dominic/todo-app">Source Code</a></button>
+        </section>
+        <br>
+
+        <section>
+            <h2>Cat Facts</h2>
+            <p>
+                Embark on a delightful journey into the feline realm with catFacts, a charming website built using React. 
+                catFacts fetches random cat facts from the Cat Facts API, offering users a daily dose of interesting and entertaining insights about our furry friends. 
+                The minimalist design and seamless navigation make catFacts the purrfect destination for cat enthusiasts.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+                <div><i class="fas fa-circle"></i>&nbsp;React</div>
+            </div>
+            <img src="images/cats.png">
+            <br>
+            <button class="btn_one"><a href="https://catfacts.netlify.app/">Demo</a></button>
+            <button class="btn_two"><a href="https://github.com/Kimani-Dominic/catfacts">Source Code</a></button>
+        </section>
+        <br>
+        <section>
+            <h2>CarSoko</h2>
+            <p>
+                Welcome to CarSoko, your go-to destination for a seamless car shopping experience. 
+                Built with precision using the powerful Django framework, CarSoko combines the robustness of PostgreSQL with the elegance of HTML and CSS. 
+                Explore a vast array of cars, from sleek sedans to powerful SUVs, and find your dream ride effortlessly.
+
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;Django</div>
+                <div><i class="fas fa-circle"></i>&nbsp;python</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+                <div><i class="fas fa-circle"></i>&nbsp;HTML & CSS</div>
+            </div>
+            <img src="images/carsoko.png">
+            <br>
+            <button class="btn_one"><a href="#">Demo</a></button>
+            <button class="btn_two"><a href="https://github.com/Kimani-Dominic/E-commerce">Source Code</a></button>
+        </section>
+        <br>
+       
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>about & skills</h1>
+            <section>
+                <h2>about Me.</h2>
+                <p> 
+                 🚀 Hey there! I'm <b>Kimani Muiruri</b>, a passionate BSc Maths and Computer Science student. 
+                 An experienced programmer with a passion for problem-solving and a knack for creating intuitive and efficient solutions. 
+                 Proficient in a range of programming languages and web technologies, I thrive on transforming complex challenges into elegant, user-friendly applications. 
+                 With a strong foundation in software development and a dedication to staying current with industry trends, I'm equipped to tackle diverse projects and deliver innovative solutions that make a difference.
+                 I'm a multifaceted tech enthusiast, delving into software development, technical writing, and ethical hacking.
+                </p>
+            </section>
+            <section>
+                <h2>skills</h2>
+                <p>
+                    <i class="fab fa-python"></i> Python
+                    <br> <!-- Python Icon -->
+
+                    <i class="fab fa-js"></i> Javascript
+                    <br><!-- JavaScript Icon -->
+
+                    <i class="fab fa-dart"></i> Dart
+                    <br> <!-- Dart Icon -->
+
+                    <i class="fab fa-html5"></i> HTML & CSS
+                    <br>
+                    <b>Linux</b><br>
+                    <b>Networking</b>
+
+                </p>
+            </section> 
+            <section>
+                <h2>Technologies</h2>
+                <p>
+                    <i class="fab fa-python django"></i>  <b>django</b>
+                    <br>
+
+                    <i class="fab fa-flutter flutter"></i>  <b>flutter</b>
+                    <br>
+
+                    <i class="fab fa-react react"></i>  <b>react</b>
+                    <br>
+
+                    <i class="fab fa-docker docker"></i> <b>docker</b> 
+                    <br>
+
+                    <i class="fab fa-git git"></i> <b>git Version control</b>
+                </p>
+            </section>
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>contact.</h1>
+            <section>
+                <h2>contact Me</h2>
+                <div class="w3-section">
+                    <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Nairobi, Kenya</p>
+                    <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +254 741951412  </p>
+                    <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: kimanimuiruri001@gmail.com</p>
+                  </div><br>
+                <p>
+                    <form action="mail.js" method="POST">
+                        <input type="text" name="name" placeholder="name" required>
+                        <input type="email" name="email" placeholder="email" required><br>
+                        <textarea name="message" placeholder="your message" required rows="5"></textarea><br>
+                        <button type="submit" class="btn_one">send</button>
+                    </form>
+                    
+                </p>
+            </section>
+        </div>
+        <div id="footer">
+            Thank You for visiting! 💙 from <br>Kimani </a>
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
